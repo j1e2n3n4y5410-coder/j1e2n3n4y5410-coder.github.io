@@ -124,28 +124,42 @@ main {
 
 .pub-list li {
     background
-/* ========== 手機版導覽列：左右滑動設定 ========== */
+/* ========== 手機版導覽列：左右滑動設定 (增強版) ========== */
 @media (max-width: 768px) {
+    /* 讓 Logo 和選單在手機上變成「上下排列」，釋放滑動空間 */
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding-bottom: 0;
+    }
+
+    nav {
+        width: 100%; /* 確保導覽列有 100% 的寬度可以滑動 */
+        margin-top: 10px;
+    }
+
     nav ul {
         display: flex;
-        flex-wrap: nowrap;     /* 強制不換行，讓選項排成一列 */
-        overflow-x: auto;      /* 開啟橫向滑動功能 */
-        -webkit-overflow-scrolling: touch; /* 讓 iOS (iPhone) 的滑動手感更滑順 */
-        justify-content: flex-start; /* 靠左對齊 */
-        padding: 10px 5px;     /* 稍微增加一點上下空間 */
-        gap: 15px;             /* 按鈕之間的間距 */
+        flex-wrap: nowrap;     /* 強制不換行 */
+        overflow-x: auto;      /* 開啟橫向滑動 */
+        -webkit-overflow-scrolling: touch; /* iOS 滑順設定 */
+        justify-content: flex-start;
+        padding: 10px 15px;    /* 左右留一點內距，視覺比較舒服 */
+        gap: 20px;             /* 按鈕間距加大一點，防誤觸 */
+        width: 100%;
     }
 
     nav ul li {
-        white-space: nowrap;   /* 確保「Contact Us」這種兩個字的選項不會被切成上下兩行 */
+        white-space: nowrap;   /* 文字不換行 */
     }
 
-    /* 隱藏底部的橫向捲軸，讓畫面更乾淨美觀 (但手指依然可以滑動) */
+    /* 隱藏橫向捲軸 */
     nav ul::-webkit-scrollbar {
         display: none;
     }
     nav ul {
-        -ms-overflow-style: none;  /* 支援 IE 和 Edge */
-        scrollbar-width: none;  /* 支援 Firefox */
+        -ms-overflow-style: none;  
+        scrollbar-width: none;  
     }
 }
