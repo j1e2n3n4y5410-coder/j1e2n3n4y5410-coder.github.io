@@ -3,17 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Member | Manuel Maestre-Reyna Lab</title>
+    <title>Home | Manuel Maestre-Reyna Lab</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        .member-photo {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 15px;
+        .gallery-section {
+            padding: 2rem 0;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-top: 2rem;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 1.5rem;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            height: 250px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            background-color: #eee;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+        .gallery-title {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 1rem;
         }
     </style>
 </head>
@@ -37,115 +62,30 @@
     </header>
 
     <main class="container">
-        <h2 class="page-title">Lab Members</h2>
+        <section class="hero">
+            <h2>Welcome to the Manuel Maestre-Reyna Lab</h2>
+            <p>Led by Dr. Manuel Maestre-Reyna, our laboratory at the National Taiwan University (NTU) Department of Chemistry specializes in Structural Biology and Time-Resolved Crystallography.</p>
+            <br>
+            <p>We are dedicated to utilizing advanced spectroscopy and cutting-edge X-ray techniques to observe the dynamic reaction processes of biological macromolecules at the atomic scale. By capturing these transient intermediate states, we aim to unravel the fundamental mechanisms of complex enzymes, such as DNA photolyases.</p>
+        </section>
 
-        <div class="hero" style="text-align: center;">
-            <img src="MMR.jpg" alt="Manuel Maestre-Reyna" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-            <h3 style="font-size: 1.8rem; color: #003366;">Manuel Maestre-Reyna 馬左仲</h3>
-            <p><strong>Principal Investigator / Assistant Professor</strong></p>
-            <p>Expert in structural biology and time-resolved crystallography.</p>
-            <p><a href="https://www.ch.ntu.edu.tw/mmaestre.html" target="_blank" style="color: #00509e; font-weight: bold;">View NTU Faculty Profile</a></p>
-        </div>
-
-        <h3 class="member-category">Postdoctoral Researchers</h3>
-        <div class="grid">
-            <div class="card" style="text-align: center;">
-                <img src="NICOLAS.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Nicolas Caramello</h4>
+        <section class="gallery-section container">
+            <h3 class="gallery-title">Laboratory Life</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="photo1.jpg" alt="Lab Photo 1" onerror="this.src='default.jpg'">
+                </div>
+                <div class="gallery-item">
+                    <img src="photo2.jpg" alt="Lab Photo 2" onerror="this.src='default.jpg'">
+                </div>
+                <div class="gallery-item">
+                    <img src="photo3.jpg" alt="Lab Photo 3" onerror="this.src='default.jpg'">
+                </div>
+                <div class="gallery-item">
+                    <img src="photo4.jpg" alt="Lab Photo 4" onerror="this.src='default.jpg'">
+                </div>
             </div>
-            <div class="card" style="text-align: center;">
-                <img src="YUHEI.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Yuhei 細川雄平</h4>
-            </div>
-        </div>
-        
-        <h3 class="member-category">Ph.D. Students</h3>
-        <div class="grid">
-            <div class="card" style="text-align: center;">
-                <img src="OWEN.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Owen 張予臣</h4>
-            </div>
-            <div class="card" style="text-align: center;">
-                <img src="WINNIE.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Winnie 陳慧妮</h4>
-            </div>
-        </div>
-
-        <h3 class="member-category">Master Students</h3>
-        <div class="grid">
-            <div class="card" style="text-align: center;">
-                <img src="JENNY.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Jenny 岳如文</h4>
-            </div>
-            <div class="card" style="text-align: center;">
-                <img src="ZACK.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Zack 翁祖儀</h4>
-            </div>
-            <div class="card" style="text-align: center;">
-                <img src="TOM.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Tom 馮明佑</h4>
-            </div>
-            <div class="card" style="text-align: center;">
-                <img src="CHILOE.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Chiloe 陳以阡</h4>
-            </div>
-            <div class="card" style="text-align: center;">
-                <img src="HSUAN.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Hsuan 施宣宇</h4>
-            </div>
-            <div class="card" style="text-align: center;">
-                <img src="POLLY.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Polly 柳沛君</h4>
-            </div>
-            <div class="card" style="text-align: center;">
-                <img src="ELVA.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Elva 曾怡嘉</h4>
-            </div>
-            <div class="card" style="text-align: center;">
-                <img src="SAMUEL.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Samuel 姚敬華</h4>
-            </div>
-            <div class="card" style="text-align: center;">
-                <img src="KORENA.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Korena 柯怡禎</h4>
-            </div>
-        </div>
-
-        <h3 class="member-category">Undergraduate Students</h3>
-        <div class="grid">
-            <div class="card" style="text-align: center;">
-                <img src="ROGER.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Roger 吳紀甫</h4>
-            </div>
-            <div class="card" style="text-align: center;">
-                <img src="COCO.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Coco 張芯琪</h4>
-            </div>
-            <div class="card" style="text-align: center;">
-                <img src="EVAN.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Evan 徐英然</h4>
-            </div>
-            <div class="card" style="text-align: center;">
-                <img src="NEIL.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Neil 彭念文</h4>
-            </div>
-            <div class="card" style="text-align: center;">
-                <img src="NORAH.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Norah 陳乃綺</h4>
-            </div>
-        </div>
-
-        <h3 class="member-category">Graduated Students</h3>
-        <div class="grid">
-            <div class="card" style="text-align: center;">
-                <img src="TIM.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Tim 林韋廷</h4>
-            </div>
-            <div class="card" style="text-align: center;">
-                <img src="KEVIN.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
-                <h4>Kevin 楊凱鈞</h4>
-            </div>
-        </div>
+        </section>
     </main>
 
     <footer>
