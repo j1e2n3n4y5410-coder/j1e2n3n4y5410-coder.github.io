@@ -6,7 +6,6 @@
     <title>Home | Maestre-Reyna Lab</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* 專屬於首頁相簿的樣式 */
         .gallery-section {
             padding: 2rem 0;
             background-color: #fff;
@@ -14,33 +13,28 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
             margin-top: 2rem;
         }
-        
         .gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 15px;
             margin-top: 1.5rem;
         }
-
         .gallery-item {
             overflow: hidden;
             border-radius: 8px;
-            height: 250px; /* 統一高度讓排版整齊 */
+            height: 250px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-
         .gallery-item img {
             width: 100%;
             height: 100%;
-            object-fit: cover; /* 自動裁切填滿框框，不變形 */
+            object-fit: cover;
             transition: transform 0.3s ease;
             cursor: pointer;
         }
-
         .gallery-item img:hover {
-            transform: scale(1.05); /* 滑鼠移上去有放大效果 */
+            transform: scale(1.05);
         }
-
         .gallery-title {
             text-align: center;
             color: #003366;
@@ -61,6 +55,7 @@
                     <li><a href="research.html">Research</a></li>
                     <li><a href="publications.html">Publications</a></li>
                     <li><a href="team.html">Team</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
         </div>
@@ -89,15 +84,13 @@
                 <div class="gallery-item">
                     <img src="photo4.jpg" alt="Lab Photo 4" onerror="this.src='default.jpg'">
                 </div>
-                </div>
+            </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p><strong>Contact Us</strong></p>
-            <p>Department of Chemistry, National Taiwan University<br>No. 1, Sec. 4, Roosevelt Rd., Da'an Dist., Taipei City 106319, Taiwan</p>
-            <p>&copy; 2026 Maestre-Reyna Lab. All rights reserved.</p>
+            <p>© 2026 Maestre-Reyna Lab. All rights reserved.</p>
         </div>
     </footer>
 </body>
