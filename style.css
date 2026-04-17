@@ -124,18 +124,18 @@ main {
 
 .pub-list li {
     background
-/* ========== 手機版導覽列：左右滑動設定 (增強版) ========== */
+/* ========== 手機版導覽列：左右滑動設定 (終極修正版) ========== */
 @media (max-width: 768px) {
-    /* 讓 Logo 和選單在手機上變成「上下排列」，釋放滑動空間 */
     header .container {
         display: flex;
         flex-direction: column;
-        align-items: center; 
-        padding-bottom: 0;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 
     nav {
-        width: 100%; /* 確保導覽列有 100% 的寬度可以滑動 */
+        width: 100%;
         margin-top: 10px;
     }
 
@@ -145,16 +145,17 @@ main {
         overflow-x: auto;      /* 開啟橫向滑動 */
         -webkit-overflow-scrolling: touch; /* iOS 滑順設定 */
         justify-content: flex-start;
-        padding: 10px 15px;    /* 左右留一點內距，視覺比較舒服 */
-        gap: 20px;             /* 按鈕間距加大一點，防誤觸 */
+        padding: 10px 0px;     
+        gap: 20px;             /* 按鈕間距 */
         width: 100%;
     }
 
     nav ul li {
         white-space: nowrap;   /* 文字不換行 */
+        flex-shrink: 0;        /* 🌟 關鍵魔法：絕對禁止壓縮按鈕尺寸！ */
     }
 
-    /* 隱藏橫向捲軸 */
+    /* 隱藏橫向捲軸，保持畫面乾淨 */
     nav ul::-webkit-scrollbar {
         display: none;
     }
