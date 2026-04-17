@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team | Maestre-Reyna Lab</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* 統一照片樣式，讓所有成員照片看起來整齊劃一 */
+        .member-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            background-color: #eee; /* 照片讀取前顯示灰色背景 */
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -28,6 +40,7 @@
         <h2 class="page-title">Our Team</h2>
 
         <div class="hero" style="text-align: center;">
+            <img src="MMR.jpg" alt="Manuel Maestre-Reyna" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
             <h3 style="font-size: 1.8rem; color: #003366;">Manuel Maestre-Reyna 馬左仲</h3>
             <p><strong>Principal Investigator / Assistant Professor</strong></p>
             <p>Expert in structural biology and time-resolved crystallography.</p>
@@ -36,46 +49,102 @@
 
         <h3 class="member-category">Postdoctoral Researchers</h3>
         <div class="grid">
-            <div class="card" style="text-align: center;"><h4>Nicolas Caramello</h4></div>
-            <div class="card" style="text-align: center;"><h4>Yuhei 細川雄平</h4></div>
+            <div class="card" style="text-align: center;">
+                <img src="Nicolas.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Nicolas Caramello</h4>
+            </div>
+            <div class="card" style="text-align: center;">
+                <img src="Yuhei.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Yuhei 細川雄平</h4>
+            </div>
         </div>
         
         <h3 class="member-category">Ph.D. Students</h3>
         <div class="grid">
-            <div class="card" style="text-align: center;"><h4>Owen 張予臣</h4></div>
-            <div class="card" style="text-align: center;"><h4>Winnie 陳慧妮</h4></div>
+            <div class="card" style="text-align: center;">
+                <img src="Owen.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Owen 張予臣</h4>
+            </div>
+            <div class="card" style="text-align: center;">
+                <img src="Winnie.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Winnie 陳慧妮</h4>
+            </div>
         </div>
 
         <h3 class="member-category">Master Students</h3>
         <div class="grid">
-            <div class="card" style="text-align: center;"><h4>Jenny 岳如文</h4></div>
-            <div class="card" style="text-align: center;"><h4>Zack 翁祖儀</h4></div>
-            <div class="card" style="text-align: center;"><h4>Tom 馮明佑</h4></div>
-            <div class="card" style="text-align: center;"><h4>Chiloe 陳以阡</h4></div>
-            <div class="card" style="text-align: center;"><h4>Hsuan 施宣宇</h4></div>
-            <div class="card" style="text-align: center;"><h4>Polly 柳沛君</h4></div>
-            <div class="card" style="text-align: center;"><h4>Elva 曾怡嘉</h4></div>
-            <div class="card" style="text-align: center;"><h4>Samuel 姚敬華</h4></div>
-            
             <div class="card" style="text-align: center;">
-                <img src="Korena.jpg" alt="Korena 柯怡禎" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin-bottom: 15px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                <img src="Jenny.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Jenny 岳如文</h4>
+            </div>
+            <div class="card" style="text-align: center;">
+                <img src="Zack.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Zack 翁祖儀</h4>
+            </div>
+            <div class="card" style="text-align: center;">
+                <img src="Tom.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Tom 馮明佑</h4>
+            </div>
+            <div class="card" style="text-align: center;">
+                <img src="Chiloe.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Chiloe 陳以阡</h4>
+            </div>
+            <div class="card" style="text-align: center;">
+                <img src="Hsuan.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Hsuan 施宣宇</h4>
+            </div>
+            <div class="card" style="text-align: center;">
+                <img src="Polly.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Polly 柳沛君</h4>
+            </div>
+            <div class="card" style="text-align: center;">
+                <img src="Elva.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Elva 曾怡嘉</h4>
+            </div>
+            <div class="card" style="text-align: center;">
+                <img src="Samuel.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Samuel 姚敬華</h4>
+            </div>
+            <div class="card" style="text-align: center;">
+                <img src="Korena.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
                 <h4>Korena 柯怡禎</h4>
             </div>
         </div>
 
         <h3 class="member-category">Undergraduate Students</h3>
         <div class="grid">
-            <div class="card" style="text-align: center;"><h4>Roger 吳紀甫</h4></div>
-            <div class="card" style="text-align: center;"><h4>Coco 張芯琪</h4></div>
-            <div class="card" style="text-align: center;"><h4>Evan 徐英然</h4></div>
-            <div class="card" style="text-align: center;"><h4>Neil 彭念文</h4></div>
-            <div class="card" style="text-align: center;"><h4>Norah 陳乃綺</h4></div>
+            <div class="card" style="text-align: center;">
+                <img src="Roger.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Roger 吳紀甫</h4>
+            </div>
+            <div class="card" style="text-align: center;">
+                <img src="Coco.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Coco 張芯琪</h4>
+            </div>
+            <div class="card" style="text-align: center;">
+                <img src="Evan.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Evan 徐英然</h4>
+            </div>
+            <div class="card" style="text-align: center;">
+                <img src="Neil.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Neil 彭念文</h4>
+            </div>
+            <div class="card" style="text-align: center;">
+                <img src="Norah.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Norah 陳乃綺</h4>
+            </div>
         </div>
 
         <h3 class="member-category">Graduated Students</h3>
         <div class="grid">
-            <div class="card" style="text-align: center;"><h4>Tim 林韋廷</h4></div>
-            <div class="card" style="text-align: center;"><h4>Kevin 楊凱鈞</h4></div>
+            <div class="card" style="text-align: center;">
+                <img src="Tim.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Tim 林韋廷</h4>
+            </div>
+            <div class="card" style="text-align: center;">
+                <img src="Kevin.jpg" class="member-photo" onerror="this.onerror=null; this.src='default.jpg';">
+                <h4>Kevin 楊凱鈞</h4>
+            </div>
         </div>
     </main>
 
