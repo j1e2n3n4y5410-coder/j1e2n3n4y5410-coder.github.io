@@ -5,6 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Maestre-Reyna Lab</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* 專屬於首頁相簿的樣式 */
+        .gallery-section {
+            padding: 2rem 0;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-top: 2rem;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 1.5rem;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 8px;
+            height: 250px; /* 統一高度讓排版整齊 */
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* 自動裁切填滿框框，不變形 */
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05); /* 滑鼠移上去有放大效果 */
+        }
+
+        .gallery-title {
+            text-align: center;
+            color: #003366;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -30,6 +72,24 @@
             <p>Led by Dr. Manuel Maestre-Reyna, our laboratory at the National Taiwan University (NTU) Department of Chemistry specializes in Structural Biology and Time-Resolved Crystallography.</p>
             <br>
             <p>We are dedicated to utilizing advanced spectroscopy and cutting-edge X-ray techniques to observe the dynamic reaction processes of biological macromolecules at the atomic scale. By capturing these transient intermediate states, we aim to unravel the fundamental mechanisms of complex enzymes, such as DNA photolyases.</p>
+        </section>
+
+        <section class="gallery-section container">
+            <h3 class="gallery-title">Laboratory Life</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="photo1.jpg" alt="Lab Photo 1" onerror="this.src='default.jpg'">
+                </div>
+                <div class="gallery-item">
+                    <img src="photo2.jpg" alt="Lab Photo 2" onerror="this.src='default.jpg'">
+                </div>
+                <div class="gallery-item">
+                    <img src="photo3.jpg" alt="Lab Photo 3" onerror="this.src='default.jpg'">
+                </div>
+                <div class="gallery-item">
+                    <img src="photo4.jpg" alt="Lab Photo 4" onerror="this.src='default.jpg'">
+                </div>
+                </div>
         </section>
     </main>
 
