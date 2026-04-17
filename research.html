@@ -5,6 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Research | Maestre-Reyna Lab</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* 新增的圖表卡片樣式 */
+        .hero-graphic {
+            margin-top: 40px;
+        }
+
+        .hero-graphic figure {
+            text-align: center;
+            margin: 20px 0;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15); /* 稍強的陰影，讓它脫穎而出 */
+        }
+
+        .hero-graphic img {
+            max-width: 100%; /* 響應式 */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .hero-graphic figcaption {
+            font-weight: bold;
+            font-size: 1.2rem;
+            color: #003366; /* 使用老師卡片的藍色 */
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -37,6 +65,13 @@
                 <li><strong>Photoreceptor Activation:</strong> Uncovering new activation modes and structural dynamics in light-sensitive proteins.</li>
                 <li><strong>Methodology Development:</strong> Advancing techniques like Serial Femtosecond Crystallography (SFX) and developing new matrices (e.g., Guanosine hydrogels) for efficient protein sample delivery.</li>
             </ul>
+
+            <div class="hero-graphic">
+                <figure>
+                    <img src="molecular-movies.gif" alt="Workflow for making molecular movies in six steps">
+                    <figcaption>Making molecular movies in six easy steps</figcaption>
+                </figure>
+            </div>
         </div>
     </main>
 
