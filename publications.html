@@ -3,39 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications | Maestre-Reyna Lab</title>
+    <title>Journal Publications | Maestre-Reyna Lab</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Google Scholar 按鈕的專屬設計 */
+        /* 專屬於學術引用格式的樣式 */
+        .page-title-styled {
+            text-align: center;
+            font-size: 2.2rem;
+            color: #1a237e; /* 深藍色，顯得學術穩重 */
+            font-style: italic;
+            text-decoration: underline;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
         .scholar-btn-container {
             text-align: center;
-            margin: 30px 0;
+            margin-bottom: 50px;
         }
+
         .scholar-btn {
             display: inline-block;
-            background-color: #4285F4; /* Google 藍色 */
-            color: #ffffff;
-            padding: 12px 24px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            border-radius: 8px;
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 8px 16px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
             text-decoration: none;
-            box-shadow: 0 4px 6px rgba(66, 133, 244, 0.3);
-            transition: all 0.3s ease;
+            transition: all 0.2s;
         }
+
         .scholar-btn:hover {
-            background-color: #3367d6;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 12px rgba(66, 133, 244, 0.4);
-            color: #ffffff;
+            background-color: #e2e6ea;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
-        /* 分類標題樣式 */
-        .research-phase {
-            color: #003366;
-            font-size: 1.5rem;
-            border-bottom: 2px solid #e9ecef;
-            padding-bottom: 10px;
-            margin: 40px 0 20px 0;
+
+        /* 論文列表排版 */
+        .pub-list-classic {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #222;
+            padding: 0 15px;
+        }
+
+        .pub-item-classic {
+            margin-bottom: 30px;
+            text-align: justify;
+        }
+
+        .pub-item-classic a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .pub-item-classic a:hover {
+            color: #00509e; /* 滑鼠移過去標題會變藍色 */
         }
     </style>
 </head>
@@ -58,86 +82,65 @@
     </header>
 
     <main class="container">
-        <h2 class="page-title">Selected Publications</h2>
+        <h2 class="page-title-styled">Journal Publications</h2>
         
         <div class="scholar-btn-container">
-            <a href="https://scholar.google.com/citations?user="0AZhGhsAAAAJ" target="_blank" class="scholar-btn">
-                📊 View Full Profile on Google Scholar
+            <a href="https://scholar.google.com/citations?user=0AZhGhsAAAAJ" target="_blank" class="scholar-btn">
+                🔍 View Full Profile on Google Scholar
             </a>
         </div>
 
-        <h3 class="research-phase">Top Academic Achievements: DNA Repair & Dynamic Crystallography (2017–2026)</h3>
-        <ul class="pub-list">
-            <li>
-                <div class="pub-title">Integrated structural dynamics uncover a new B12 photoreceptor activation mode</div>
-                <div class="pub-journal">Nature (2024/2025)</div>
-                <div class="pub-doi"><a href="https://doi.org/10.1038/s41586-025-10074-2" target="_blank">DOI: 10.1038/s41586-025-10074-2</a></div>
-            </li>
-            <li>
-                <div class="pub-title">Visualizing the DNA repair process by a photolyase at atomic resolution</div>
-                <div class="pub-journal">Science (2023) - <em>Representative Work</em></div>
-                <div class="pub-doi"><a href="https://doi.org/10.1126/science.add7795" target="_blank">DOI: 10.1126/science.add7795</a></div>
-            </li>
-            <li>
-                <div class="pub-title">A deazariboflavin chromophore kinetically stabilizes reduced FAD state in a bifunctional cryptochrome</div>
-                <div class="pub-journal">Nature Communications (2023)</div>
-                <div class="pub-doi"><a href="https://doi.org/10.1038/s41467-023-41873-1" target="_blank">DOI: 10.1038/s41467-023-41873-1</a></div>
-            </li>
-            <li>
-                <div class="pub-title">Serial femtosecond crystallography captures structural dynamics of DNA photolyase</div>
-                <div class="pub-journal">Nature (2022)</div>
-                <div class="pub-doi"><a href="https://doi.org/10.1038/s41586-022-04462-5" target="_blank">DOI: 10.1038/s41586-022-04462-5</a></div>
-            </li>
-            <li>
-                <div class="pub-title">Mechanism of a DNA glycosylase revealed by time-resolved crystallography</div>
-                <div class="pub-journal">Nature Communications (2021)</div>
-                <div class="pub-doi"><a href="https://doi.org/10.1038/s41467-021-21873-w" target="_blank">DOI: 10.1038/s41467-021-21873-w</a></div>
-            </li>
-            <li>
-                <div class="pub-title">Structural Basis for the Reaction Mechanism of Monoglycosyltransferase</div>
-                <div class="pub-journal">Journal of Chemical Information and Modeling (2020)</div>
-                <div class="pub-doi"><a href="https://doi.org/10.1021/acs.jcim.0c00377" target="_blank">DOI: 10.1021/acs.jcim.0c00377</a></div>
-            </li>
-            <li>
-                <div class="pub-title">Structural insights into the catalytic mechanism of a Class II DNA photolyase</div>
-                <div class="pub-journal">Nature Communications (2017)</div>
-                <div class="pub-doi"><a href="https://doi.org/10.1038/ncomms14959" target="_blank">DOI: 10.1038/ncomms14959</a></div>
-            </li>
-        </ul>
+        <div class="pub-list-classic">
+            
+            <div class="pub-item-classic">
+                [8] R. Rios-Santacruz, H. Poddar, K. Pounot, ..., <u><strong>Manuel Maestre-Reyna*</strong></u>, 
+                <a href="https://doi.org/10.1038/s41586-025-10074-2" target="_blank">"<u>Integrated structural dynamics uncover a new B12 photoreceptor activation mode</u>"</a><br>
+                <i><strong>Nature</strong></i> <strong>2026</strong>. (Published online)
+            </div>
 
-        <h3 class="research-phase">Early Research: Viral Proteins & Drug Design (2011–2016)</h3>
-        <ul class="pub-list">
-            <li>
-                <div class="pub-title">The 1.0 Å resolution crystal structure of a Class II DNA photolyase</div>
-                <div class="pub-journal">Scientific Reports (2016)</div>
-                <div class="pub-doi"><a href="https://doi.org/10.1038/srep36759" target="_blank">DOI: 10.1038/srep36759</a></div>
-            </li>
-            <li>
-                <div class="pub-title">Structural Basis for Enzyme Inhibition of H5N1 Influenza Virus...</div>
-                <div class="pub-journal">ACS Chemical Biology (2015)</div>
-                <div class="pub-doi"><a href="https://doi.org/10.1021/cb500854j" target="_blank">DOI: 10.1021/cb500854j</a></div>
-            </li>
-            <li>
-                <div class="pub-title">Structural basis for the design of specific inhibitors of influenza HA</div>
-                <div class="pub-journal">Scientific Reports (2015)</div>
-                <div class="pub-doi"><a href="https://doi.org/10.1038/srep15754" target="_blank">DOI: 10.1038/srep15754</a></div>
-            </li>
-            <li>
-                <div class="pub-title">Structure-based approach to the development of potential antiviral agents</div>
-                <div class="pub-journal">Current Pharmaceutical Design (2013)</div>
-                <div class="pub-doi"><a href="https://doi.org/10.2174/1381612811319240012" target="_blank">DOI: 10.2174/13816128...</a></div>
-            </li>
-            <li>
-                <div class="pub-title">TcaR-ssDNA complex crystal structure reveals new DNA binding mechanism</div>
-                <div class="pub-journal">Nucleic Acids Research (2012)</div>
-                <div class="pub-doi"><a href="https://doi.org/10.1093/nar/gks233" target="_blank">DOI: 10.1093/nar/gks233</a></div>
-            </li>
-            <li>
-                <div class="pub-title">Structural and functional analysis of the MarR-family transcriptional regulator TcaR</div>
-                <div class="pub-journal">Journal of Biological Chemistry (2011)</div>
-                <div class="pub-doi"><a href="https://doi.org/10.1074/jbc.M110.170662" target="_blank">DOI: 10.1074/jbc.M110.170662</a></div>
-            </li>
-        </ul>
+            <div class="pub-item-classic">
+                [7] <u><strong>Manuel Maestre-Reyna*</strong></u>, P.-H. Wang, E. Nango, Y. Hosokawa, ..., 
+                <a href="https://doi.org/10.1126/science.add7795" target="_blank">"<u>Visualizing the DNA repair process by a photolyase at atomic resolution</u>"</a><br>
+                <i><strong>Science</strong></i> <strong>2023</strong>, <i>382</i>, eadd7795.
+            </div>
+
+            <div class="pub-item-classic">
+                [6] H. Poddar, R. Rios-Santacruz, D. J. Heyes, ..., <u><strong>Manuel Maestre-Reyna*</strong></u>, 
+                <a href="https://doi.org/10.1038/s41467-023-41873-1" target="_blank">"<u>A deazariboflavin chromophore kinetically stabilizes reduced FAD state in a bifunctional cryptochrome</u>"</a><br>
+                <i><strong>Nature Commun.</strong></i> <strong>2023</strong>, <i>14</i>, 5323.
+            </div>
+
+            <div class="pub-item-classic">
+                [5] <u><strong>Manuel Maestre-Reyna*</strong></u>, P.-H. Wang, E. Nango, Y. Hosokawa, ..., 
+                <a href="https://doi.org/10.1038/s41586-022-04462-5" target="_blank">"<u>Serial femtosecond crystallography captures structural dynamics of DNA photolyase</u>"</a><br>
+                <i><strong>Nature</strong></i> <strong>2022</strong>, <i>603</i>, 344–349.
+            </div>
+
+            <div class="pub-item-classic">
+                [4] <u><strong>Manuel Maestre-Reyna*</strong></u>, ..., 
+                <a href="https://doi.org/10.1038/s41467-021-21873-w" target="_blank">"<u>Mechanism of a DNA glycosylase revealed by time-resolved crystallography</u>"</a><br>
+                <i><strong>Nature Commun.</strong></i> <strong>2021</strong>, <i>12</i>, 1484.
+            </div>
+
+            <div class="pub-item-classic">
+                [3] <u><strong>Manuel Maestre-Reyna*</strong></u>, ..., 
+                <a href="https://doi.org/10.1038/ncomms14959" target="_blank">"<u>Structural insights into the catalytic mechanism of a Class II DNA photolyase</u>"</a><br>
+                <i><strong>Nature Commun.</strong></i> <strong>2017</strong>, <i>8</i>, 14959.
+            </div>
+
+            <div class="pub-item-classic">
+                [2] <u><strong>Manuel Maestre-Reyna*</strong></u>, ..., 
+                <a href="https://doi.org/10.1038/srep36759" target="_blank">"<u>The 1.0 Å resolution crystal structure of a Class II DNA photolyase</u>"</a><br>
+                <i><strong>Sci. Rep.</strong></i> <strong>2016</strong>, <i>6</i>, 36759.
+            </div>
+
+            <div class="pub-item-classic">
+                [1] <u><strong>Manuel Maestre-Reyna*</strong></u>, ..., 
+                <a href="https://doi.org/10.1093/nar/gks233" target="_blank">"<u>TcaR-ssDNA complex crystal structure reveals new DNA binding mechanism</u>"</a><br>
+                <i><strong>Nucleic Acids Res.</strong></i> <strong>2012</strong>, <i>40</i>, 5143–5154.
+            </div>
+
+        </div>
     </main>
 
     <footer>
